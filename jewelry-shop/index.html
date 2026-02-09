@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ювелирный магазин "Элегант"</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /* Временные стили, если CSS файл не загрузится */
+        body { 
+            font-family: Arial, sans-serif; 
+            padding: 20px; 
+            background: #f5f7fa;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Коллекция обручальных колец</h1>
+        <div class="product-card">
+            <!-- Контейнер для изображения -->
+            <div class="product-card__image">
+                <!-- Временное изображение с интернета -->
+                <img src="ring.jpg" 
+                     alt="Обручальное кольцо из белого золота с бриллиантами"
+                     style="width: 100%; height: 280px; object-fit: cover; border-radius: 8px;">
+                <!-- Бейдж "Хит продаж" -->
+                <div class="product-card__badge">Хит продаж</div>
+            </div>
+            
+            <!-- Тело карточки -->
+            <div class="product-card__body">
+                <h2 class="product-card__title">Кольцо «Лунная Грация»</h2>
+                <p class="product-card__description">
+                    Изысканное обручальное кольцо из белого золота 585 пробы. 
+                    Центральный бриллиант огранки «принцесса» (0,3 карата) в обрамлении 
+                    россыпи из 12 мелких бриллиантов. Символ вечной любви и утонченного вкуса.
+                </p>
+                
+                <!-- Детали товара -->
+                <div class="product-card__details">
+                    <div class="product-card__detail">
+                        <span>Материал:</span> Белое золото 585
+                    </div>
+                    <div class="product-card__detail">
+                        <span>Вставки:</span> Бриллианты (0,45 карат)
+                    </div>
+                    <div class="product-card__detail">
+                        <span>Размер:</span> 16.5 (подгонка)
+                    </div>
+                </div>
+                
+                <!-- Футер карточки с ценой и кнопкой -->
+                <div class="product-card__footer">
+                    <div class="product-card__price">89 900</div>
+                    <button class="product-card__button">В корзину</button>
+                </div>
+            </div>
+        </div>
+        
+        <div style="margin-top: 40px; text-align: center; color: #666; font-size: 14px;">
+            <p>Это демонстрационная карточка товара для практического задания по фронтенд-разработке.</p>
+            <p>Использованы: HTML, CSS (SASS), переменные, миксины, вложенность селекторов.</p>
+        </div>
+    </div>
+</body>
+</html>
